@@ -1,7 +1,7 @@
 {
   "name": "with-passport",
   "scripts": {
-    "dev": "next",
+    "dev": "TOKEN_SECRET=eHN2VnZYTEhOUmx5NDA3MVBPRDlCc2hlNHlZNHZublZWNmtwbm9Hcw== next",
     "build": "next build",
     "start": "next start"
   },
