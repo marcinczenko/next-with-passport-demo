@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <h1>Passport.js Example</h1>
+      <h1>Welcome to the NextJS Passport.js Example</h1>
 
       <p>Steps to test the example:</p>
 

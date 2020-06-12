@@ -22,10 +22,13 @@ export default nextConnect()
   .post(async (req, res) => {
     try {
       const user = await authenticate('local', req, res)
+      console.log('nextConnect-authenticate', user)
       // session is the payload to save in the token, it may contain basic info about the user
       const session = { ...user }
       // The token is a string with the encrypted session
       const token = await encryptSession(session)
+
+      console.log('token=', token)
 
       setTokenCookie(res, token)
       res.status(200).send({ done: true })
